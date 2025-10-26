@@ -35,7 +35,7 @@ testWorkflow.addJob('test', {
   runsOn: ['ubuntu-latest'],
   steps: [
     {
-      name: 'Checkout',
+      name: 'Checkout source code',
       uses: 'actions/checkout@v4'
     },
     {
