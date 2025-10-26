@@ -46,12 +46,12 @@ testWorkflow.addJob('test', {
       uses: 'actions/setup-node@v4',
       with: {
         'node-version': '22',
-        'cache': 'npm'
+        'cache': 'yarn'
       }
     },
     {
       name: 'Install dependencies',
-      run: 'npm ci'
+      run: 'yarn install --frozen-lockfile'
     },
     {
       name: 'Check all files are up to date',
@@ -59,11 +59,11 @@ testWorkflow.addJob('test', {
     },
     {
       name: 'Build',
-      run: 'npm run build'
+      run: 'yarn build'
     },
     {
       name: 'Test',
-      run: 'npm test'
+      run: 'yarn test'
     }
   ]
 });

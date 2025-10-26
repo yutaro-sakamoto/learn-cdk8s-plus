@@ -19,14 +19,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: npm
+          cache: yarn
       - name: Install dependencies
-        run: npm ci
+        run: yarn install --frozen-lockfile
       - name: Check all files are up to date
         run: |-
           npx projen
           git diff --exit-code
       - name: Build
-        run: npm run build
+        run: yarn build
       - name: Test
-        run: npm test
+        run: yarn test
