@@ -15,6 +15,9 @@ const project = new cdk8s.Cdk8sTypeScriptApp({
   // packageName: undefined,  /* The "name" in package.json. */
 });
 
+// Set the yarn version
+project.package.addField('packageManager', 'yarn@1.22.19'); 
+
 // 既存のワークフローファイルを削除
 project.tryRemoveFile('.github/workflows/build.yml');
 project.tryRemoveFile('.github/workflows/pull-request-lint.yml');
