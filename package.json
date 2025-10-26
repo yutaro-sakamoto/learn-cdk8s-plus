@@ -1,5 +1,5 @@
 {
-  "name": "learn-cdk8s-plus",
+  "name": "learn-cdk8s+",
   "scripts": {
     "build": "npx projen build",
     "clobber": "npx projen clobber",
