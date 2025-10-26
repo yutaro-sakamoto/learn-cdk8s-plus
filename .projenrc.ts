@@ -51,6 +51,10 @@ testWorkflow.addJob('test', {
       run: 'npm ci'
     },
     {
+      name: 'Check all files are up to date',
+      run: 'npx projen\ngit diff --exit-code'
+    },
+    {
       name: 'Build',
       run: 'npm run build'
     },
