@@ -3,7 +3,7 @@ import { cdk8s } from 'projen';
 const project = new cdk8s.Cdk8sTypeScriptApp({
   cdk8sVersion: '2.3.33',
   defaultReleaseBranch: 'main',
-  name: 'learn-cdk8s+',
+  name: 'learn-cdk8s-plus',
   projenrcTs: true,
 
   // デフォルトのワークフローを無効化
