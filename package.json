@@ -17,7 +17,8 @@
     "test:watch": "npx projen test:watch",
     "upgrade": "npx projen upgrade",
     "watch": "npx projen watch",
-    "projen": "npx projen"
+    "projen": "npx projen",
+    "format": "prettier"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^2",
@@ -40,7 +41,8 @@
   "dependencies": {
     "cdk8s": "^2.3.33",
     "cdk8s-plus-22": "^2.0.0-rc.26",
-    "constructs": "^10.1.42"
+    "constructs": "^10.1.42",
+    "prettier": "^3.6.2"
   },
   "license": "Apache-2.0",
   "publishConfig": {

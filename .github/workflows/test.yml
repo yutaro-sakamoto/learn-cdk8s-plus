@@ -28,5 +28,9 @@ jobs:
           git diff --exit-code
       - name: Build
         run: yarn build
+      - name: Format check
+        run: npm run format --check **/*.ts
+      - name: eslint
+        run: npx projen eslint
       - name: Test
         run: yarn test
